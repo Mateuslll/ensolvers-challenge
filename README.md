@@ -49,7 +49,7 @@ Use this endpoint to create a new note:
 
 #### Endpoint
 ```bash
-$POST http://localhost:8080/notes/add
+$POST http://localhost:8080/notes/
 {
   "id": 1,
   "name": "Plan Trip",
@@ -63,14 +63,14 @@ Use this endpoint to List actives notes:
 
 #### Endpoint
 ```bash
-$GET http://localhost:8080/notes/actives
+$GET http://localhost:8080/notes/
 ```
 
 Use this endpoint to Update actives notes:
 
 #### Endpoint
 ```bash
-$PUT http://localhost:8080/notes/update
+$PUT http://localhost:8080/notes/{id}
 {
     "id": 3,
     "name": "Team Meeting",
@@ -84,7 +84,7 @@ Use this endpoint to Delete actives notes:
 
 #### Endpoint
 ```bash
-$DELETE http://localhost:8080/notes/delete/{id}
+$DELETE http://localhost:8080/notes/{id}
 ```
 
 Use this endpoint to List archived notes:
