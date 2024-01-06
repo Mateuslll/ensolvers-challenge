@@ -17,19 +17,19 @@ public class UserNotesController {
         this.userNotesService = userNotesService;
     }
     //CRUD methods
-    @PostMapping("/add")
+    @PostMapping()
     List<UserNotes> create (@RequestBody UserNotes notes, Sort sort){
         return userNotesService.create(notes,sort);
     }
-    @GetMapping("/actives")
+    @GetMapping()
     List<UserNotes> list (){
         return userNotesService.list();
     }
-    @PutMapping("/update")
+    @PutMapping("{id}")
     List<UserNotes> update (@RequestBody UserNotes notes){
         return userNotesService.update(notes);
     }
-    @DeleteMapping("delete/{id}")
+    @DeleteMapping("{id}")
     List<UserNotes> delete (@PathVariable("id") Long id){
         return userNotesService.delete(id);
     }
@@ -39,7 +39,7 @@ public class UserNotesController {
     public List<UserNotes> getArchivedNotes() {
         return userNotesService.getArchivedNotes();
     }
-    @GetMapping("/archived/{category}")
+    @GetMapping("/archive/{category}")
     List<UserNotes> getArchivedNotes(@PathVariable("category") String category) {
         return userNotesService.getArchivedNotesByCategory(category);
     }
