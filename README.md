@@ -5,6 +5,7 @@ This API is part of the challenge for Full Stack Implementation Exercise for dev
 
 ## Technologies Used
 
+- Vue.js
 - Spring Boot
 - Spring MVC
 - Spring Data JPA
@@ -20,11 +21,11 @@ This API is part of the challenge for Full Stack Implementation Exercise for dev
 - Error Response Handling
 - Automatic Swagger Generation with OpenAPI 3
 
-## How to Run
+## How to Run BACK-END
 
 1. **Clone Git Repository**
     ```bash
-    git clone <URL_do_repositório>
+    git clone <URL_repository>
     ```
 
 2. **Build the Project**
@@ -36,7 +37,13 @@ This API is part of the challenge for Full Stack Implementation Exercise for dev
     ```bash
     java -jar target/ensolvers-challenge-0.0.1-SNAPSHOT.jar
     ```
-
+#### FRONT-END
+1. **Run the Application**
+    ```bash
+    npm i
+    npm run dev
+    ```
+The Front-End can be acessed at `http://localhost:5173/home`
 The API can be accessed at `http://localhost:8080`. The Swagger documentation can be viewed at `http://localhost:8080/swagger-ui.html`.
 
 ## API Endpoints
