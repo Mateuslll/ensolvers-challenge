@@ -34,7 +34,7 @@ This API is part of the challenge for Full Stack Implementation Exercise for dev
 
 3. **Run the Application**
     ```bash
-    java -jar target/exemploexemplonseiainda
+    java -jar target/ensolvers-challenge-0.0.1-SNAPSHOT.jar
     ```
 
 The API can be accessed at `http://localhost:8080`. The Swagger documentation can be viewed at `http://localhost:8080/swagger-ui.html`.
